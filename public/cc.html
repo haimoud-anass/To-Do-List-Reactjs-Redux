@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffcccc;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        .buttons button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .no {
+            background-color: #ccc;
+            color: black;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .no:hover {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Will you be my Valentine? ❤️</h1>
+        <div class="buttons">
+            <button class="yes" onclick="acceptProposal()">Yes! 💖</button>
+            <button class="no" id="noButton">No 😢</button>
+        </div>
+        <p id="response" style="margin-top: 20px; font-size: 18px; color: #ff4d4d;"></p>
+    </div>
+
+    <script>
+        function acceptProposal() {
+            document.getElementById("response").innerText = "Yay! You said Yes! 💖🎉";
+        }
+    </script>
+</body>
+</html>

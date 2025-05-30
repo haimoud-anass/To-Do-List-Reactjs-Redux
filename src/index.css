@@ -1,0 +1,78 @@
+:root {
+  --background: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #4a4a4a;
+  --accent: #007bff;
+  --borders: #e0e0e0;
+  --hover: #0056b3;
+  --card-background: #f9f9f9;
+}
+
+[data-theme="dark"] {
+  --background: #121212;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --accent: #1e90ff;
+  --borders: #333333;
+  --hover: #90caf9;
+  --card-background: #2c2c2c;
+}
+/* Add these styles to your global CSS file */
+.App.lightMode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.App.darkMode {
+  background-color: #2C2C2C;
+  color: #ffffff;
+}
+
+/* Add any additional styles for dark mode */
+.darkMode .MuiPaper-root {
+  background-color: #121212;
+
+  color: #ffffff;
+}
+
+.darkMode .MuiTableCell-root {
+  color: #ffffff;
+  border-bottom-color: #121212;
+}
+
+.darkMode .MuiCheckbox-root {
+  color: #ffffff;
+}
+
+/* Add any other dark mode styles as needed */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Center the container */
+.center-container {
+  width: 600px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* If you need it centered vertically as well */
+.full-page {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: calc(100vh - 84px); /* Full viewport height */
+  background-color: #f4f4f4;
+}
